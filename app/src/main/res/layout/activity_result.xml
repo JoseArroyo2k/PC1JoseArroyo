@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/idResultadoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="38dp"
+        android:text="Resultado"
+        app:layout_constraintStart_toEndOf="@+id/idTextViewNotaFinal2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idTextViewNotaFinal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="47dp"
+        android:text="La nota final es :"
+        app:layout_constraintBottom_toTopOf="@+id/idValorNotaFinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idResultadoTextView" />
+
+    <TextView
+        android:id="@+id/idValorNotaFinal"
+        android:layout_width="117dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="169dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/idResultadoFinalTexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idTextViewRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="41dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toStartOf="@+id/idValorNotaFinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idResultadoFinalTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="51dp"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/idTextViewRandom"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewRandom" />
+</androidx.constraintlayout.widget.ConstraintLayout>
